@@ -1,0 +1,9 @@
+{
+  "appId": "com.dogmy.app",
+  "appName": "DogMy",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "useLegacyBridge": true
+  }
+}

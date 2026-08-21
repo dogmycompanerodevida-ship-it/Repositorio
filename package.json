@@ -1,0 +1,17 @@
+{
+  "name": "dogmy-native",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/core": "6.2.1",
+    "@capacitor/android": "6.2.1",
+    "@capacitor-community/background-geolocation": "1.2.26"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.2.1",
+    "esbuild": "0.24.2"
+  }
+}

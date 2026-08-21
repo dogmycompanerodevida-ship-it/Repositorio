@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+<title>Lista de Clientes - DogMy 7.8</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+<div class="tarjeta">
+
+<h1>👥 Lista de Clientes</h1>
+<p class="subtitulo">Clientes registrados</p>
+
+<hr><br>
+
+<div id="listaClientes">
+<p>No hay clientes registrados.</p>
+</div>
+
+<br>
+<button onclick="window.location.href='registro.html?tipo=cliente'">➕ Registrar Cliente</button>
+<br><br>
+<button onclick="window.location.href='admin.html'">⬅ Volver al Admin</button>
+
+</div>
+</div>
+
+<script type="module" src="script.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+}
+</script>
+
+</body>
+</html>

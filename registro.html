@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+<title>Registro - DogMy 7.8</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+<div class="tarjeta">
+
+<h1 id="tituloRegistro">➕ Nuevo Registro</h1>
+<p class="subtitulo" id="subtituloRegistro">Completa los datos</p>
+
+<div id="seccionPaseador" style="display:none;">
+    <hr>
+    <h3>🚶 Datos del Paseador</h3>
+    <input type="text" id="nombrePaseadorReg" placeholder="Nombre del paseador">
+    <input type="tel" id="telefonoPaseador" placeholder="Teléfono">
+    <input type="text" id="usuarioPaseador" placeholder="Usuario (ej: Diego)">
+    <input type="password" id="contrasenaPaseador" placeholder="Contraseña (ej: 12345)">
+</div>
+
+<div id="seccionCliente">
+    <hr>
+    <h3>👤 Datos del Cliente</h3>
+    <input type="text" id="nombre" placeholder="Nombre del cliente">
+    <input type="tel" id="telefono" placeholder="Teléfono">
+    <input type="text" id="direccion" placeholder="Dirección">
+    <input type="text" id="nuevoUsuario" placeholder="Usuario (ej: Juan)">
+    <input type="password" id="nuevaContrasena" placeholder="Contraseña (ej: teamo)">
+
+    <hr>
+    <h3>🐶 Datos del Perro</h3>
+    <input type="text" id="nombrePerro" placeholder="Nombre del perro">
+    <input type="text" id="raza" placeholder="Raza">
+    <input type="number" id="edad" placeholder="Edad (años)">
+    <input type="text" id="color" placeholder="Color">
+    <input type="text" id="tamano" placeholder="Tamaño (Pequeño/Mediano/Grande)">
+
+    <h3>📅 Días de paseo</h3>
+    <div class="calendario">
+        <label><input type="checkbox" id="lunes"> <span>LUN</span></label>
+        <label><input type="checkbox" id="martes"> <span>MAR</span></label>
+        <label><input type="checkbox" id="miercoles"> <span>MIÉ</span></label>
+        <label><input type="checkbox" id="jueves"> <span>JUE</span></label>
+        <label><input type="checkbox" id="viernes"> <span>VIE</span></label>
+        <label><input type="checkbox" id="sabado"> <span>SÁB</span></label>
+        <label><input type="checkbox" id="domingo"> <span>DOM</span></label>
+    </div>
+
+    <h3>🕒 Hora del paseo</h3>
+    <input type="time" id="hora">
+
+    <h3>🚶 Asignar Paseador</h3>
+    <select id="paseadorAsignado">
+        <option value="">Seleccione un paseador</option>
+    </select>
+</div>
+
+<br><br>
+<button id="guardarRegistro">💾 Guardar</button>
+
+<br><br>
+<button onclick="window.location.href='admin.html'" id="btnVolverAdmin">⬅ Volver</button>
+
+</div>
+</div>
+
+<script type="module" src="script.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+}
+</script>
+
+</body>
+</html>
