@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2e7d32">
+<title>DogMy 8.5 - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+<div class="tarjeta">
+<img src="logo.jpg" class="logo" alt="DOGMY">
+
+<h1>🐕 DOGMY</h1>
+<p class="subtitulo">Compañero de Vida</p>
+
+<input type="text" id="usuario" placeholder="Usuario o correo">
+<input type="password" id="contrasena" placeholder="Contraseña">
+
+<button id="btnIngresar">🐾 Ingresar</button>
+
+<p class="version">Versión <strong>8.0 Firebase</strong></p>
+<p style="font-size:12px;color:#888;margin-top:10px;">✅ Ahora multi-dispositivo</p>
+</div>
+</div>
+
+<script type="module" src="script.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(reg => console.log('Service Worker registrado', reg))
+    .catch(err => console.log('Error al registrar SW', err));
+}
+</script>
+
+</body>
+</html>
