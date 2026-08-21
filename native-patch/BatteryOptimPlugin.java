@@ -53,4 +53,4 @@ public class BatteryOptimPlugin extends Plugin {
         }
         call.resolve();
     }
- 
+}
